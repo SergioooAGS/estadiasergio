@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <script src="/bin/lib/d3.v7.js"></script>
+   <script src="/bin/js/app.js"></script>
+   <script src="/bin/js/figuras.js"></script>
+   <title>Learning TypeScript</title>
+   <style>
+       #areas {
+           transform: translate(0px, 0px);
+       }
+       #perimetros {
+           transform: translate(500px, -350px);
+       }
+   </style>
+</head>
+<body>
+   <div id="areas">
+       <h3>Área de un triángulo rectángulo</h3>
+       <input type="number" id="baseRectangulo" placeholder="Base">
+       <input type="number" id="alturaRectangulo" placeholder="Altura">
+       <button onclick="figura.areaRectangulo()">check</button>
+       
+       <br><br>
+       <label>Área: </label>
+       <div id="areaResultadoRectangulo">
+       </div>
+       <h3>Área de un triángulo Cuadrado</h3>
+       <input type="number" id="lado" placeholder="lado">
+       <button>Calcular área</button>
+       <br><br>
+       <label>Área: </label>
+       <div id="areaResultadoCuadrado">
+       </div>
+       <h3>Área de un triángulo circulo</h3>
+       <input type="number" id="radio" placeholder="radio">
+       <button>Calcular área</button>
+       <br><br>
+       <label>Área: </label>
+       <div id="areaResultadoCirculo">
+       </div>
+   </div>
+   <div id="perimetros">
+       <h3>Perímetro de un rectángulo</h3>
+
+       <input type="number" id="bRectangulo" placeholder="Base">
+       <input type="number" id="aRectangulo" placeholder="Altura">
+       <button onclick="figuras.areaRectangulo()">calc area</button>
+       <br><br>
+       <label>Perímetro: </label>
+       <div id="pResultadoRectangulo">
+       </div>
+
+       <h3>Perímetro de un Cuadrado</h3>
+
+       <input type="number" id="plado" placeholder="lado">
+       <button>Calcular Perímetro</button>
+       <br><br>
+       <label>Área: </label>
+       <div id="pResultadoCuadrado">
+       </div>
+       <h3>Perímetro de un círculo</h3>
+       <input type="number" id="pradio" placeholder="radio">
+       <button>Calcular Perímetro</button>
+       <br><br>
+       <label>Área: </label>
+       <div id="pResultadoCirculo">
+       </div>
+   </div>
+</body>
+
+</html>

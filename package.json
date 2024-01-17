@@ -1,0 +1,22 @@
+{
+  "name": "estadiasergio",
+  "version": "1.0.0",
+  "description": "estadia 2024 elevenmins",
+  "main": "bin/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergioooAGS/estadiasergio.git"
+  },
+  "author": "Sergio Alejandro Garcia Salazar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SergioooAGS/estadiasergio/issues"
+  },
+  "homepage": "https://github.com/SergioooAGS/estadiasergio#readme",
+  "dependencies": {
+    "@types/d3": "^7.4.3"
+  }
+}
