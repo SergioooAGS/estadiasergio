@@ -3,9 +3,7 @@
 
 <head>
    <meta charset="UTF-8">
-   <script src="/bin/lib/d3.v7.js"></script>
-   <script src="/bin/js/app.js"></script>
-   <script src="/bin/js/figuras.js"></script>
+  
    <title>Learning TypeScript</title>
    <style>
        #areas {
@@ -21,7 +19,7 @@
        <h3>Área de un triángulo rectángulo</h3>
        <input type="number" id="baseRectangulo" placeholder="Base">
        <input type="number" id="alturaRectangulo" placeholder="Altura">
-       <button onclick="figura.areaRectangulo()">check</button>
+       <button onclick="figuras.calcularArea()">check</button>
        
        <br><br>
        <label>Área: </label>
@@ -69,6 +67,9 @@
        <div id="pResultadoCirculo">
        </div>
    </div>
+   <script src="lib/d3.v7.js"></script>
+   <script src="js/app.js"></script>
+   <script src="js/figuras.js"></script>
 </body>
 
 </html>
