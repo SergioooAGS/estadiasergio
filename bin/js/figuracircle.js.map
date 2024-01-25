@@ -1,0 +1,1 @@
+{"version":3,"file":"figuracircle.js","sourceRoot":"","sources":["../../src/figuracircle.ts"],"names":[],"mappings":"AACA,IAAU,OAAO,CAYf;AAZF,WAAU,OAAO;IAEjB,EAAE,CAAC,MAAM,CAAC,SAAS,CAAC,CAAC,EAAE,CAAC,OAAO,EAAE,GAAE,EAAE;QAChC,YAAY,EAAE,CAAC;IACpB,CAAC,CAAC,CAAC;IACE,SAAgB,YAAY;IAM5B,CAAC;IANe,oBAAY,eAM3B,CAAA;AACL,CAAC,EAZQ,OAAO,KAAP,OAAO,QAYf"}
