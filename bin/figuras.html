@@ -12,16 +12,22 @@
        #perimetros {
            transform: translate(500px, -350px);
        }
+       #Titulo{
+           text-align: left;
+           color: rgb(255, 255, 255);
+           text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Contorno negro */;
+       }
    </style>
 </head>
 <body id="">
-    
+    <h1 id="Titulo"> AREAS Y PERIMETROS</h1>
+    <br>
    <div id="areas">
        <h3>Área de un triángulo rectángulo</h3>
        <div id="rectangulo"></div>
        <input type="number" id="baseRectangulo" placeholder="Base">
        <input type="number" id="alturaRectangulo" placeholder="Altura">
-       <button id="botonC" >check</button>
+       <button id="botonC" >Calcular área</button>
        <br><br>
         <label id="txtr1" >Área: </label>
        <div id="areaResultadoRectangulo">
@@ -45,36 +51,42 @@
        <div id="areaResultadoCirculo">
        </div>
    </div>
+
+
+
    <div id="perimetros">
        <h3>Perímetro de un rectángulo</h3>
-
+       <div id="perimetroRec"></div>
        <input type="number" id="bRectangulo" placeholder="Base">
        <input type="number" id="aRectangulo" placeholder="Altura">
-       <button onclick="figuras.areaRectangulo()">calc area</button>
+       <button id="botonF">Calcular Perímetro</button>
        <br><br>
-       <label>Perímetro: </label>
+       <label id="txtr4">Perímetro: </label>
        <div id="pResultadoRectangulo">
        </div>
 
        <h3>Perímetro de un Cuadrado</h3>
-
+       <div id="perimetroCuad"></div>
        <input type="number" id="plado" placeholder="lado">
-       <button>Calcular Perímetro</button>
+       <button id="botonG">Calcular Perímetro</button>
        <br><br>
-       <label>Área: </label>
+       <label id="txtr5">Perímetro: </label>
        <div id="pResultadoCuadrado">
        </div>
+
        <h3>Perímetro de un círculo</h3>
+       <div id="perimetroCir"></div>
        <input type="number" id="pradio" placeholder="radio">
-       <button>Calcular Perímetro</button>
+       <button id="botonH">Calcular Perímetro</button>
        <br><br>
-       <label>Área: </label>
+       <label id="txtr6">Perimetro: </label>
        <div id="pResultadoCirculo">
        </div>
    </div>
    <script src="lib/d3.v7.js"></script>
    <script src="js/app.js"></script>
    <script src="js/figuras.js"></script>
+   <script src="js/perimetros.js"></script>
    
 </body>
 

@@ -1,7 +1,7 @@
 var figuras;
 (function (figuras) {
     const switchElement = d3.select("#figuras");
-    let switchState = '#cuadrado';
+    let switchState = '';
     d3.select("#botonC").on("click", () => {
         switchState = '#rectangulo'; //funcion arrow =
         calcularArea("rectangulo");
@@ -13,6 +13,19 @@ var figuras;
     d3.select("#botonE").on("click", () => {
         switchState = '#circulo';
         calcularArea("circulo");
+    });
+    //BOTONES DE PERIMETRO
+    d3.select("#botonF").on("click", () => {
+        switchState = '#perimetroRec';
+        calcularPerimetro("perimetroRec");
+    });
+    d3.select("#botonG").on("click", () => {
+        switchState = '#perimetroCuad';
+        calcularPerimetro("perimetroCuad");
+    });
+    d3.select("#botonH").on("click", () => {
+        switchState = '#perimetroCir';
+        calcularPerimetro("perimetroCir");
     });
     function calcularArea(operacion) {
         let area;
@@ -45,5 +58,36 @@ var figuras;
         }
     }
     figuras.calcularArea = calcularArea;
+    function calcularPerimetro(operacion) {
+        let perimetro;
+        switch (switchState) {
+            case "#perimetroRec": {
+                let areaResultado = (d3.select("#pResultadoRectangulo").property("value"));
+                let base = parseFloat(d3.select("#bRectangulo").property("value"));
+                let alt = parseFloat(d3.select("#aRectangulo").property("value"));
+                let perimetro = 2 * (base + alt);
+                console.log("PROBLEMA 4");
+                d3.select("#txtr4").text("Perimetro: " + perimetro);
+                break;
+            }
+            case "#perimetroCuad": {
+                let areaResultado = (d3.select("#pResultadoCuadrado").property("value"));
+                let lado = parseFloat(d3.select("#plado").property("value"));
+                let perimetro = 4 * lado;
+                console.log("PROBLEMA 5");
+                d3.select("#txtr5").text("Perimetro: " + perimetro);
+                break;
+            }
+            case "#perimetroCir": {
+                let areaResultado = (d3.select("#pResultadoCirculo").property("value"));
+                let rad = parseFloat(d3.select("#pradio").property("value"));
+                let perimetro = (2 * (Math.PI) * rad);
+                console.log("PROBLEMA 6");
+                d3.select("#txtr6").text("Perimetro: " + perimetro);
+                break;
+            }
+        }
+    }
+    figuras.calcularPerimetro = calcularPerimetro;
 })(figuras || (figuras = {}));
 //# sourceMappingURL=figuras.js.map
